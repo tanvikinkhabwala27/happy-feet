@@ -344,6 +344,95 @@ export default function Home() {
 
   </div>
 </section>
+      {/* FOOTER */}
+<footer className="bg-slate-950 text-white">
+
+  <div className="max-w-7xl mx-auto px-6 py-16">
+
+    <div className="grid md:grid-cols-4 gap-10">
+
+      {/* BRAND */}
+      <div>
+
+        <div className="flex items-center gap-3 mb-4">
+          <div className="text-3xl">🗽💃</div>
+
+          <div>
+            <h3 className="font-bold text-xl">
+              Happy Feet
+            </h3>
+
+            <p className="text-sm text-slate-400">
+              Dance Academy
+            </p>
+          </div>
+        </div>
+
+        <p className="text-slate-400">
+          Bollywood, BollyHop, Contemporary and
+          Performance Training throughout NYC and
+          New Jersey.
+        </p>
+
+      </div>
+
+      {/* PROGRAMS */}
+      <div>
+
+        <h4 className="font-bold mb-4">
+          Programs
+        </h4>
+
+        <ul className="space-y-2 text-slate-400">
+          <li>Bollywood</li>
+          <li>BollyHop</li>
+          <li>Contemporary</li>
+          <li>Showcase Teams</li>
+        </ul>
+
+      </div>
+
+      {/* SERVICES */}
+      <div>
+
+        <h4 className="font-bold mb-4">
+          Services
+        </h4>
+
+        <ul className="space-y-2 text-slate-400">
+          <li>Private Training</li>
+          <li>Wedding Choreography</li>
+          <li>Corporate Workshops</li>
+          <li>School Programs</li>
+        </ul>
+
+      </div>
+
+      {/* CONTACT */}
+      <div>
+
+        <h4 className="font-bold mb-4">
+          Contact
+        </h4>
+
+        <ul className="space-y-2 text-slate-400">
+          <li>New York City</li>
+          <li>Jersey City</li>
+          <li>hello@happyfeetdance.com</li>
+          <li>(555) 555-5555</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div className="border-t border-slate-800 mt-12 pt-8 text-center text-slate-500">
+      © 2026 Happy Feet Dance Academy. All Rights Reserved.
+    </div>
+
+  </div>
+
+</footer>
     </main>
   );
 }
