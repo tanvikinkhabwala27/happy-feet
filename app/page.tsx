@@ -82,7 +82,89 @@ export default function Home() {
         </div>
 
       </section>
+{/* UPCOMING CLASSES */}
+<section className="py-24 bg-white">
+  <div className="max-w-7xl mx-auto px-6">
 
+    <div className="text-center mb-14">
+      <h2 className="text-5xl font-bold text-slate-900 mb-4">
+        Upcoming Classes & Intensives
+      </h2>
+
+      <p className="text-slate-600 text-lg">
+        Pop-ups, masterclasses, workshops and special training opportunities.
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-3 gap-8">
+
+      <div className="bg-slate-50 rounded-3xl p-8 shadow">
+        <p className="text-teal-600 font-semibold mb-2">
+          July 2026
+        </p>
+
+        <h3 className="text-2xl font-bold mb-3">
+          Bollywood Intensive
+        </h3>
+
+        <p className="text-slate-600 mb-6">
+          Advanced choreography and performance training.
+        </p>
+
+        <Link
+          href="/register"
+          className="inline-block bg-teal-600 text-white px-5 py-3 rounded-lg"
+        >
+          Register
+        </Link>
+      </div>
+
+      <div className="bg-slate-50 rounded-3xl p-8 shadow">
+        <p className="text-teal-600 font-semibold mb-2">
+          August 2026
+        </p>
+
+        <h3 className="text-2xl font-bold mb-3">
+          BollyHop Pop-Up
+        </h3>
+
+        <p className="text-slate-600 mb-6">
+          Bollywood meets Hip-Hop in a high-energy workshop.
+        </p>
+
+        <Link
+          href="/register"
+          className="inline-block bg-teal-600 text-white px-5 py-3 rounded-lg"
+        >
+          Register
+        </Link>
+      </div>
+
+      <div className="bg-slate-50 rounded-3xl p-8 shadow">
+        <p className="text-teal-600 font-semibold mb-2">
+          September 2026
+        </p>
+
+        <h3 className="text-2xl font-bold mb-3">
+          Performance Workshop
+        </h3>
+
+        <p className="text-slate-600 mb-6">
+          Stage presence, confidence and storytelling through dance.
+        </p>
+
+        <Link
+          href="/register"
+          className="inline-block bg-teal-600 text-white px-5 py-3 rounded-lg"
+        >
+          Register
+        </Link>
+      </div>
+
+    </div>
+
+  </div>
+</section>
     </main>
   );
 }
