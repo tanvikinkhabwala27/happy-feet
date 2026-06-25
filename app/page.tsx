@@ -267,6 +267,83 @@ export default function Home() {
 
   </div>
 </section>
+      {/* 2026 TOUR */}
+<section className="bg-gradient-to-r from-slate-900 to-teal-800 text-white py-24">
+  <div className="max-w-5xl mx-auto px-6 text-center">
+
+    <p className="uppercase tracking-widest text-teal-300 mb-4">
+      Coming Soon
+    </p>
+
+    <h2 className="text-6xl font-bold mb-6">
+      Happy Feet Tour 2026
+    </h2>
+
+    <p className="text-xl text-slate-200 mb-10 max-w-3xl mx-auto">
+      We're bringing workshops, masterclasses and performances
+      to new cities across North America.
+    </p>
+
+    <h3 className="text-3xl font-semibold mb-6">
+      Want Happy Feet in your city?
+    </h3>
+
+    <button className="bg-white text-slate-900 px-8 py-4 rounded-xl font-bold">
+      Bring Happy Feet To My City
+    </button>
+
+  </div>
+</section>
+      {/* INSTAGRAM */}
+<section className="py-24 bg-slate-50">
+  <div className="max-w-7xl mx-auto px-6">
+
+    <div className="text-center mb-14">
+      <h2 className="text-5xl font-bold text-slate-900 mb-4">
+        Follow The Journey
+      </h2>
+
+      <p className="text-slate-600 text-lg">
+        Photos, performances, rehearsals and behind-the-scenes moments.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+
+      <div className="aspect-square bg-slate-200 rounded-3xl flex items-center justify-center text-5xl">
+        📸
+      </div>
+
+      <div className="aspect-square bg-slate-200 rounded-3xl flex items-center justify-center text-5xl">
+        🎥
+      </div>
+
+      <div className="aspect-square bg-slate-200 rounded-3xl flex items-center justify-center text-5xl">
+        💃
+      </div>
+
+      <div className="aspect-square bg-slate-200 rounded-3xl flex items-center justify-center text-5xl">
+        ✨
+      </div>
+
+      <div className="aspect-square bg-slate-200 rounded-3xl flex items-center justify-center text-5xl">
+        🕺
+      </div>
+
+      <div className="aspect-square bg-slate-200 rounded-3xl flex items-center justify-center text-5xl">
+        🎭
+      </div>
+
+    </div>
+
+    <div className="text-center mt-10">
+      <button className="bg-teal-600 text-white px-8 py-4 rounded-xl">
+        Follow On Instagram
+      </button>
+    </div>
+
+  </div>
+</section>
     </main>
   );
 }
