@@ -1,169 +1,180 @@
 import Link from "next/link";
 
 export default function Home() {
-  const showcasePrograms = [
-    {
-      title: "Elite Team",
-      location: "Manhattan",
-      price: "$300",
-    },
-    {
-      title: "BollyHop Team",
-      location: "Jersey City",
-      price: "$300",
-    },
-    {
-      title: "Pre-Teens",
-      location: "Jersey City",
-      price: "$300",
-    },
-    {
-      title: "Adult Bollywood",
-      location: "Manhattan",
-      price: "$300",
-    },
-  ];
-
   return (
     <main className="min-h-screen bg-white">
-      <nav className="border-b bg-white">
-        <div className="max-w-7xl mx-auto px-6 py-5 flex justify-between">
+
+      {/* NAVBAR */}
+
+      <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur border-b z-50">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <h1 className="font-bold text-2xl">
             Happy Feet Dance Academy
           </h1>
 
-          <div className="flex gap-6">
+          <div className="flex gap-6 items-center">
             <Link href="/">Home</Link>
-            <Link href="/classes">Classes</Link>
             <Link href="/showcase">Showcase</Link>
+            <Link href="/register">Register</Link>
             <Link href="/portal">Portal</Link>
+
+            <Link
+              href="/register"
+              className="bg-pink-600 text-white px-4 py-2 rounded-lg"
+            >
+              Join Now
+            </Link>
           </div>
         </div>
       </nav>
 
-      <section className="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-600 text-white">
-        <div className="max-w-7xl mx-auto px-6 py-40">
-          <div className="max-w-3xl">
-            <h1 className="text-6xl font-bold mb-6">
-              Learn. Perform. Belong.
+      {/* HERO */}
+
+      <section className="bg-gradient-to-br from-pink-600 via-purple-600 to-indigo-700 text-white pt-40 pb-32">
+
+        <div className="max-w-7xl mx-auto px-6">
+
+          <div className="max-w-4xl">
+
+            <p className="uppercase tracking-widest mb-4">
+              NYC • Jersey City
+            </p>
+
+            <h1 className="text-7xl font-black leading-tight mb-6">
+              Dance. Perform.
+              <br />
+              Inspire.
             </h1>
 
-            <p className="text-xl mb-8">
-              Bollywood, BollyHop, Contemporary, Hip-Hop,
-              Semi-Classical, Workshops and Showcase Programs
-              across NYC & NJ.
+            <p className="text-2xl mb-10 text-pink-100">
+              Bollywood, BollyHop, Contemporary and Showcase
+              programs designed for dancers of all ages.
             </p>
 
             <div className="flex gap-4">
-            <Link
-              href="/register"
-              className="bg-white text-black px-6 py-3 rounded-xl font-semibold"
-            >
-              Join A Class
-            </Link>
-
-            <Link
-              href="/showcase"
-              className="border border-white px-6 py-3 rounded-xl"
-            >
-              Fall Showcase 2026
-            </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-3">
-            Fall Showcase 2026
-          </h2>
-
-          <p className="text-gray-600 mb-10">
-            Train for months and perform on stage in our
-            signature showcase production.
-          </p>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {showcasePrograms.map((item) => (
-              <div
-                key={item.title}
-                className="border rounded-2xl p-6 shadow-sm hover:shadow-lg transition"
+              <Link
+                href="/register"
+                className="bg-white text-black px-8 py-4 rounded-xl font-bold"
               >
-                <h3 className="font-bold text-xl mb-2">
-                  {item.title}
-                </h3>
+                Register Today
+              </Link>
 
-                <p className="text-gray-600">
-                  {item.location}
-                </p>
+              <Link
+                href="/showcase"
+                className="border border-white px-8 py-4 rounded-xl"
+              >
+                View Showcase
+              </Link>
+            </div>
 
-                <p className="mt-4 font-semibold">
-                  {item.price}
-                </p>
-
-                <Link
-                  href="/register"
-                  className="block text-center w-full mt-5 bg-black text-white py-2 rounded-lg"
-                >
-                  Register
-                </Link>
-              </div>
-            ))}
           </div>
+
         </div>
+
       </section>
 
-      <section className="bg-gray-50 py-20">
+      {/* PROGRAMS */}
+
+      <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-10">
-            Programs
+
+          <h2 className="text-5xl font-bold text-center mb-14">
+            Our Programs
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-xl">
-              <h3 className="font-bold text-xl mb-2">
+          <div className="grid md:grid-cols-3 gap-8">
+
+            <div className="rounded-3xl shadow-lg p-8 border">
+              <div className="text-5xl mb-4">💃</div>
+              <h3 className="text-2xl font-bold mb-3">
                 Bollywood
               </h3>
               <p>
-                High-energy choreography for all levels.
+                High-energy choreography for beginners and
+                experienced dancers alike.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl">
-              <h3 className="font-bold text-xl mb-2">
+            <div className="rounded-3xl shadow-lg p-8 border">
+              <div className="text-5xl mb-4">🔥</div>
+              <h3 className="text-2xl font-bold mb-3">
                 BollyHop
               </h3>
               <p>
-                Bollywood meets Hip-Hop.
+                Bollywood fusion with hip-hop grooves and
+                performance training.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl">
-              <h3 className="font-bold text-xl mb-2">
+            <div className="rounded-3xl shadow-lg p-8 border">
+              <div className="text-5xl mb-4">✨</div>
+              <h3 className="text-2xl font-bold mb-3">
                 Contemporary
               </h3>
               <p>
-                Expression, movement and storytelling.
+                Technique, storytelling and expressive
+                movement training.
               </p>
             </div>
+
           </div>
         </div>
       </section>
 
-      <section className="py-20">
-        <div className="max-w-4xl mx-auto text-center px-6">
-          <h2 className="text-4xl font-bold mb-6">
+      {/* SHOWCASE */}
+
+      <section className="bg-black text-white py-24">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+
+          <p className="uppercase tracking-widest text-pink-400 mb-4">
+            September 2026
+          </p>
+
+          <h2 className="text-6xl font-bold mb-6">
+            Fall Showcase
+          </h2>
+
+          <p className="text-xl text-gray-300 mb-10">
+            Join a team, train for months, and perform on
+            stage in our annual showcase production.
+          </p>
+
+          <Link
+            href="/showcase"
+            className="bg-pink-600 px-8 py-4 rounded-xl inline-block"
+          >
+            Learn More
+          </Link>
+
+        </div>
+      </section>
+
+      {/* INSTRUCTOR */}
+
+      <section className="py-24">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+
+          <h2 className="text-5xl font-bold mb-6">
             Meet Anitha
           </h2>
 
-          <p className="text-lg text-gray-700">
-            Director, choreographer and instructor bringing
-            together students from NYC and NJ through dance,
-            performance and community.
+          <p className="text-xl text-gray-600">
+            Choreographer, instructor and community leader
+            helping dancers grow through performance,
+            confidence and creativity.
           </p>
+
         </div>
       </section>
+
+      {/* FOOTER */}
+
+      <footer className="bg-gray-100 py-10">
+        <div className="max-w-7xl mx-auto px-6 text-center text-gray-600">
+          © 2026 Happy Feet Dance Academy
+        </div>
+      </footer>
+
     </main>
   );
 }
