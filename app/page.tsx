@@ -165,6 +165,108 @@ export default function Home() {
 
   </div>
 </section>
+      {/* FALL SHOWCASE */}
+<section className="bg-slate-900 text-white py-24">
+  <div className="max-w-6xl mx-auto px-6 text-center">
+
+    <p className="uppercase tracking-widest text-teal-400 mb-4">
+      Annual Performance Event
+    </p>
+
+    <h2 className="text-6xl font-bold mb-6">
+      Fall Showcase 2026
+    </h2>
+
+    <p className="text-xl text-slate-300 max-w-3xl mx-auto mb-10">
+      Join a showcase team, train with dedicated instructors,
+      and perform on stage alongside dancers from across NYC
+      and New Jersey.
+    </p>
+
+    <div className="flex justify-center gap-4">
+      <Link
+        href="/showcase"
+        className="bg-teal-600 text-white px-8 py-4 rounded-xl"
+      >
+        Learn More
+      </Link>
+
+      <Link
+        href="/register"
+        className="border border-white px-8 py-4 rounded-xl"
+      >
+        Register
+      </Link>
+    </div>
+
+  </div>
+</section>
+      {/* SERVICES */}
+<section className="py-24 bg-white">
+  <div className="max-w-7xl mx-auto px-6">
+
+    <div className="text-center mb-14">
+      <h2 className="text-5xl font-bold text-slate-900 mb-4">
+        Services
+      </h2>
+
+      <p className="text-slate-600 text-lg">
+        Customized dance experiences for individuals, schools and organizations.
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <div className="bg-slate-50 p-8 rounded-3xl shadow">
+        <h3 className="text-2xl font-bold mb-3">
+          Private Training
+        </h3>
+
+        <p className="text-slate-600">
+          One-on-one coaching tailored to your goals.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 rounded-3xl shadow">
+        <h3 className="text-2xl font-bold mb-3">
+          Wedding Choreography
+        </h3>
+
+        <p className="text-slate-600">
+          First dances, family performances and sangeet preparation.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 rounded-3xl shadow">
+        <h3 className="text-2xl font-bold mb-3">
+          Corporate Workshops
+        </h3>
+
+        <p className="text-slate-600">
+          Team-building experiences through dance and movement.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 rounded-3xl shadow">
+        <h3 className="text-2xl font-bold mb-3">
+          School Programs
+        </h3>
+
+        <p className="text-slate-600">
+          Educational and cultural dance programming for students.
+        </p>
+      </div>
+
+    </div>
+
+    <div className="text-center mt-12">
+      <button className="bg-teal-600 text-white px-8 py-4 rounded-xl font-semibold">
+        Inquire Now
+      </button>
+    </div>
+
+  </div>
+</section>
     </main>
   );
 }
